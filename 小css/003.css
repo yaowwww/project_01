@@ -1,0 +1,75 @@
+/* 首先有一个link关系样式表,外联式 */
+
+
+/* 一。标签选择器 */
+p {
+    color: black;
+}
+/* 二。类选择器 */
+.one {
+    color: brown;
+}
+.size {
+    font-size: 66px;
+}
+/* 三。id选择器 */
+#two {
+    color: blue;
+}
+/* 四。通配符选择器 */
+/* 整个页面的所有标签都会变 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 清除默认样式（常用） */
+}
+
+
+/* 字体样式 */
+.ziti {
+    /* 大小，默认16 */
+    font-size: 20px;
+    /* 变粗细400，700，默认400 */
+    font-weight: 700;
+    /* 斜体 normal使不斜，italic使倾斜*/
+    font-style: normal;
+    /* 字体 默认微软雅黑，写多个按优先级从头选用，最后是选任意一种非衬线字体显示 */
+    font-family: 微软雅黑，黑体，sans-serif;
+    /* 简写 style weight size/line-height family（一定是这个顺序）（复合属性），覆盖（从上往下覆盖执行 */
+    font: italic 700 66px 宋体;
+}
+
+/* 文本样式 */
+.aaa {
+    /* em为变化的当前字体单位，首行缩进两个字大小 */
+    text-indent: 2em;
+    /* 行高 可用px，也可只写数字代表字体倍数，如1表示取消了行间距*/
+    line-height: 1;
+}
+h1 {
+    /* 内容水平对齐 left，right，center。左，右对齐，居中对齐*/
+    text-align: center;
+}
+p {
+    /* 图片不能直接用img可以用body，但是body中没有单独定义过text-align的部分都会变，可以把图片放进p或div标签，给所需元素的父元素设置 */
+    text-align: right;
+}
+.aa {
+    text-decoration: underline;
+}
+.bb {
+    text-decoration: line-through;
+}
+.cc {
+    text-decoration: overline;
+}
+a {
+    text-decoration: none;
+}
+/* 标签水平居中 margin: 0 auto*/
+.dd {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: 0 auto;
+}
